@@ -1024,6 +1024,17 @@ MonoBehaviour:
   m_MoveSpeedMultiplier: 1
   m_AnimSpeedMultiplier: 1
   m_GroundCheckDistance: 0.2
+  m_Rigidbody: {fileID: 0}
+  m_Animator: {fileID: 0}
+  m_IsGrounded: 0
+  m_OrigGroundCheckDistance: 0
+  m_TurnAmount: 0
+  m_ForwardAmount: 0
+  m_GroundNormal: {x: 0, y: 0, z: 0}
+  m_CapsuleHeight: 0
+  m_CapsuleCenter: {x: 0, y: 0, z: 0}
+  m_Capsule: {fileID: 0}
+  m_Crouching: 0
 --- !u!114 &114592505940668436
 MonoBehaviour:
   m_ObjectHideFlags: 1
