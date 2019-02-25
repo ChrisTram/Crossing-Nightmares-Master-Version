@@ -12,29 +12,27 @@ MonoBehaviour:
   m_Name: ProBuilderPreferences
   m_EditorClassIdentifier: 
   m_Bool_keys:
-  - pb_SmoothingGroupEditor::m_ShowPreview
-  - pb_SmoothingGroupEditor::m_DrawNormals
-  - pb_SmoothingGroupEditor::m_PreviewDither
   - pbIconGUI
   m_Int_keys:
   - pbDefaultEditLevel
   - pbDefaultSelectionMode
   - pb_GIWorkflowMode
+  - pbVertexColorTool
   m_Float_keys:
-  - pb_SmoothingGroupEditor::m_NormalsSize
-  - pb_SmoothingGroupEditor::m_PreviewOpacity
   - pbEditorScroll.x
   - pbEditorScroll.y
-  m_String_keys: []
+  m_String_keys:
+  - pb_VertexColorPalette::lastAssignedColorPalette
+  - pbCurrentMaterialPalette
   m_Color_keys: []
   m_Material_keys: []
-  m_Bool_values: 00000001
-  m_Int_values: 000000000200000000000000
+  m_Bool_values: 01
+  m_Int_values: 01000000020000000000000000000000
   m_Float_values:
-  - 0.13130437
-  - 0.5
   - 0
   - 0
-  m_String_values: []
+  m_String_values:
+  - Assets/ProBuilder Data/Default Color Palette.asset
+  - Assets/ProBuilder Data//Default Material Palette.asset
   m_Color_values: []
   m_Material_values: []

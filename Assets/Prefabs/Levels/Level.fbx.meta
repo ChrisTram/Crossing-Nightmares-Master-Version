@@ -1,9 +1,7 @@
 fileFormatVersion: 2
-guid: 172276cc9c6eac545ac9183214a11a68
-timeCreated: 1520503083
-licenseType: Pro
+guid: 458fa4a5938c2c54fbb29d28c7342ff3
 ModelImporter:
-  serializedVersion: 22
+  serializedVersion: 23
   fileIDToRecycleName:
     100000: Ground
     100002: //RootNode
@@ -20,7 +18,7 @@ ModelImporter:
     4300002: Ground
   externalObjects: {}
   materials:
-    importMaterials: 0
+    importMaterials: 1
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -37,6 +35,7 @@ ModelImporter:
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
@@ -68,6 +67,8 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
