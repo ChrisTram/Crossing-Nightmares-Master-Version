@@ -38,4 +38,16 @@ public class PlayerController : MonoBehaviour {
             character.Move(Vector3.zero, false, false);
         }
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.transform.tag == "HealZone")
+        {
+            Debug.Log("HealZone");
+        }
+        if (other.gameObject.transform.tag == "Heal")
+        {
+            Debug.Log("Heal");
+        }
+    }
 }

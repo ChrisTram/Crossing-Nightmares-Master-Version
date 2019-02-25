@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ennemy
   - HealZone
+  - Heal
   layers:
   - Default
   - TransparentFX
