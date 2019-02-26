@@ -41,7 +41,6 @@ public class HealthScript : MonoBehaviour {
         if (health > maxHP)
         {
             health = maxHP;
-            Debug.Log("FullHealth!");
         }
 
         UpdateHealthBar();
