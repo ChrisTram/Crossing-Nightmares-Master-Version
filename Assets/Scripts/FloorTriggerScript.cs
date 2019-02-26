@@ -14,7 +14,13 @@ public class FloorTriggerScript : MonoBehaviour {
         {
 
             other.SendMessage((isDamaging) ? "TakeDamage" : "HealDamage", Time.deltaTime * damage);
+        }
+    }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Player")
+        {
             if (effectName.Length != 0)
             {
                 other.SendMessage("startEffect", effectName);
@@ -24,9 +30,12 @@ public class FloorTriggerScript : MonoBehaviour {
 
     private void OnTriggerExit(Collider other)
     {
-        if (effectName.Length != 0)
+        if (other.tag == "Player")
         {
-            other.SendMessage("stopEffect", effectName);
+            if (effectName.Length != 0)
+            {
+                other.SendMessage("stopEffect", effectName);
+            }
         }
     }
 }

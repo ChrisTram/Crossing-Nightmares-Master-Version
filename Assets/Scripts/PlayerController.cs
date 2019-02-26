@@ -46,40 +46,31 @@ public class PlayerController : MonoBehaviour {
         {
             character.Move(Vector3.zero, false, false);
         }
-    }/*
+    }
 
-    public void startEffect(string effectname)
+    public void startEffect(string effectName)
     {
+        //Optimal pour le moment pour mon projet, cela ne serait pas viable de ne travailler qu'avec des ParticleSystem, 
+        //je préfère les récupérer quand j'en ai besoin, c'est à dire seulement pour un effet qui persistera
+        //Les autres pourront être juste activés puis arrêtés. Si besoin ajout de tags plus tard, Linq useless.
         Debug.Log("startEffect");
-        switch (effectname)
+        GameObject effect = effects.Find(obj => obj.name == effectName);
+        if(effect.activeSelf)
         {
-            case "Luc":
-                effects[0].SetActive(true);
-                break;
-            case "Fire":
-                effects[1].SetActive(true);
-                break;
-            case "Orb":
-                effects[2].SetActive(true);
-                break;
+            ParticleSystem effectPS = effect.GetComponent<ParticleSystem>();
+            effectPS.Play();
+        }
+        else
+        {
+            effect.SetActive(true);
         }
     }
 
-    public void stopEffect(string effectname)
+    public void stopEffect(string effectName)
     {
         Debug.Log("stopEffect");
-        switch (effectname)
-        {
-            case "Luc":
-                effects[0].SetActive(false);
-                break;
-            case "Fire":
-                effects[1].SetActive(false);
-                break;
-            case "Orb":
-                effects[2].SetActive(false);
-                break;
-        }
-    }*/
+        ParticleSystem effect = effects.Find(obj => obj.name == effectName).GetComponent<ParticleSystem>();
+        effect.Stop();
+    }
 
 }
