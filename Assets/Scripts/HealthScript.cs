@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class HealthScript : MonoBehaviour {
@@ -8,8 +9,8 @@ public class HealthScript : MonoBehaviour {
     public Image currentHealthBar;
     public Text HPText;
 
-    private float health = 150;
-    private float maxHP = 150;
+    private float health = 100;
+    private float maxHP = 100;
 
     private void Start()
     {
@@ -29,7 +30,7 @@ public class HealthScript : MonoBehaviour {
         if(health < 0)
         {
             health = 0;
-            Debug.Log("Dead!");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
         UpdateHealthBar();
     }

@@ -42,27 +42,4 @@ public class PlayerController : MonoBehaviour {
         }
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.transform.tag == "HealZone")
-        {
-            Debug.Log("HealZone");
-        }
-        if (other.gameObject.transform.tag == "Heal")
-        {
-            Debug.Log("Heal");
-        }
-    }
-    private float test =0;
-    private void OnTriggerStay(Collider other)
-    {
-        if (other.gameObject.transform.tag == "HealZone")
-        {
-            test += Time.deltaTime * 1f;
-            Debug.Log(test);
-
-        }
-    }
-    // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-
 }
