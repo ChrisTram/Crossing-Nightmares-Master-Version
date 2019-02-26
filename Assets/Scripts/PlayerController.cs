@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour {
         agent.updateRotation = false;
     }
 
-    void Update()
+    void LateUpdate()
     {
         if (Input.GetMouseButtonDown(0))
         {
