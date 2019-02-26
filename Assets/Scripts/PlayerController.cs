@@ -12,6 +12,9 @@ public class PlayerController : MonoBehaviour {
 
     public ThirdPersonCharacter character;
 
+    [SerializeField] float increaseHealth = 1f;
+    [SerializeField] float Health = 100;
+
     void Start ()
     {
         agent.updateRotation = false;
@@ -50,4 +53,16 @@ public class PlayerController : MonoBehaviour {
             Debug.Log("Heal");
         }
     }
+    private float test =0;
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.transform.tag == "HealZone")
+        {
+            test += Time.deltaTime * 1f;
+            Debug.Log(test);
+
+        }
+    }
+    // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
 }

@@ -20,7 +20,7 @@ public class HealthScript : MonoBehaviour {
     {
         float ratio = health / maxHP;
         currentHealthBar.rectTransform.localScale = new Vector3(ratio, 1, 1); //Si la barre de vie est utilisée
-        HPText.text = (ratio * 100).ToString()+'%';
+        HPText.text = (ratio * 100).ToString("0")+'%';
     }
 
     public void TakeDamage(float damage)
