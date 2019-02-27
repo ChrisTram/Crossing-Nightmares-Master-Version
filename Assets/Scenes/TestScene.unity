@@ -5081,7 +5081,7 @@ MonoBehaviour:
   m_DefaultArea: 0
   m_IgnoreNavMeshAgent: 1
   m_IgnoreNavMeshObstacle: 1
-  m_OverrideTileSize: 1
+  m_OverrideTileSize: 0
   m_TileSize: 256
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.1
@@ -5662,7 +5662,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4065940228424314, guid: 824c426f2410f014f9d906871ba42d8e, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.65
+      value: 0.69
       objectReference: {fileID: 0}
     - target: {fileID: 4065940228424314, guid: 824c426f2410f014f9d906871ba42d8e, type: 2}
       propertyPath: m_LocalPosition.z
@@ -5687,6 +5687,10 @@ Prefab:
     - target: {fileID: 4065940228424314, guid: 824c426f2410f014f9d906871ba42d8e, type: 2}
       propertyPath: m_RootOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4065940228424314, guid: 824c426f2410f014f9d906871ba42d8e, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 824c426f2410f014f9d906871ba42d8e, type: 2}
@@ -5950,6 +5954,11 @@ Prefab:
       propertyPath: HPText
       value: 
       objectReference: {fileID: 161815185}
+    - target: {fileID: 195684083906576968, guid: c4764ac042f4b864dbbae8de867c3ffe,
+        type: 2}
+      propertyPath: m_BaseOffset
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c4764ac042f4b864dbbae8de867c3ffe, type: 2}
   m_IsPrefabAsset: 0
