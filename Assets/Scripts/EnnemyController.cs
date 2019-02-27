@@ -17,6 +17,7 @@ public class EnnemyController : MonoBehaviour
     void Start()
     {
         agent.updateRotation = false;
+
     }
 
     void Update()
@@ -31,4 +32,5 @@ public class EnnemyController : MonoBehaviour
             character.Move(Vector3.zero, false, false);
         }
     }
+   
 }
