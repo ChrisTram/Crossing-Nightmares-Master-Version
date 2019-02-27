@@ -19,7 +19,7 @@ public class EnnemyController : MonoBehaviour
         agent.updateRotation = false;
     }
 
-    void LateUpdate()
+    void Update()
     {
         agent.SetDestination(player.transform.position);
         if (agent.remainingDistance > agent.stoppingDistance)
