@@ -21,10 +21,12 @@ public class PlayerController : MonoBehaviour {
         effects = gameObject.GetComponentInChildren<EffectsController>().getEffects();
     }
 
+
     void Start ()
     {
         agent.updateRotation = false;
     }
+
 
     void Update()
     {
