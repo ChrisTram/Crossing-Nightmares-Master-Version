@@ -5954,11 +5954,6 @@ Prefab:
       propertyPath: HPText
       value: 
       objectReference: {fileID: 161815185}
-    - target: {fileID: 195684083906576968, guid: c4764ac042f4b864dbbae8de867c3ffe,
-        type: 2}
-      propertyPath: m_BaseOffset
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c4764ac042f4b864dbbae8de867c3ffe, type: 2}
   m_IsPrefabAsset: 0
