@@ -5084,7 +5084,7 @@ MonoBehaviour:
   m_OverrideTileSize: 0
   m_TileSize: 256
   m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.16666667
+  m_VoxelSize: 0.1
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 23800000, guid: 9512e02ecdf75a8499bdfd7ac02d6da4, type: 2}
 --- !u!4 &1007932017
@@ -5905,7 +5905,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4550594283111608, guid: c4764ac042f4b864dbbae8de867c3ffe, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 2.85
+      value: 17.2
       objectReference: {fileID: 0}
     - target: {fileID: 4550594283111608, guid: c4764ac042f4b864dbbae8de867c3ffe, type: 2}
       propertyPath: m_LocalPosition.y
@@ -5913,7 +5913,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4550594283111608, guid: c4764ac042f4b864dbbae8de867c3ffe, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0.02
+      value: 5.37
       objectReference: {fileID: 0}
     - target: {fileID: 4550594283111608, guid: c4764ac042f4b864dbbae8de867c3ffe, type: 2}
       propertyPath: m_LocalRotation.x
@@ -5954,6 +5954,11 @@ Prefab:
         type: 2}
       propertyPath: m_ObstacleAvoidanceType
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 195684083906576968, guid: c4764ac042f4b864dbbae8de867c3ffe,
+        type: 2}
+      propertyPath: m_AngularSpeed
+      value: 500
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c4764ac042f4b864dbbae8de867c3ffe, type: 2}
