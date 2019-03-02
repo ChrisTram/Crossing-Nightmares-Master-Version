@@ -14,6 +14,8 @@ public class EnnemyController : MonoBehaviour
 
     public ThirdPersonCharacter player;
 
+    public float dmgPower;
+
     void Start()
     {
         agent.updateRotation = false;
@@ -30,7 +32,17 @@ public class EnnemyController : MonoBehaviour
         else
         {
             character.Move(Vector3.zero, false, false);
+            player.SendMessage("TakeDamage", dmgPower);
+
         }
     }
-   
+    /*
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            player.SendMessage("TakeDamage", dmgPower);
+        }
+    }*/
+
 }
