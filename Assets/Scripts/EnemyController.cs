@@ -21,7 +21,7 @@ public class EnemyController : MonoBehaviour
         agent.updateRotation = false;
 
     }
-
+    private bool firstFHit = true;
     void Update()
     {
         agent.SetDestination(player.transform.position);
@@ -32,7 +32,14 @@ public class EnemyController : MonoBehaviour
         else
         {
             character.Move(Vector3.zero, false, false);
-            player.SendMessage("TakeDamage", dmgPower);
+            if(firstFHit)
+            {
+                firstFHit = false;
+            }
+            else
+            {
+                player.SendMessage("TakeDamage", dmgPower);
+            }
 
         }
     }
