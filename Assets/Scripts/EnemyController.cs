@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.AI;
 using UnityStandardAssets.Characters.ThirdPerson;
 
-public class EnnemyController : MonoBehaviour
+public class EnemyController : MonoBehaviour
 {
 
 

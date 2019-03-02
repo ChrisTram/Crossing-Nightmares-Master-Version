@@ -5831,11 +5831,6 @@ Prefab:
       propertyPath: m_Name
       value: Enemy (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 114001338974780316, guid: 57ee4541db677a24188cc6f425d62a98,
-        type: 2}
-      propertyPath: dmgPower
-      value: 0.5
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57ee4541db677a24188cc6f425d62a98, type: 2}
   m_IsPrefabAsset: 0
