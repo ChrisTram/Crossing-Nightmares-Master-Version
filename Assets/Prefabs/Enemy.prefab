@@ -1114,7 +1114,7 @@ MonoBehaviour:
   agent: {fileID: 195107282741716184}
   character: {fileID: 114657475056769258}
   player: {fileID: 0}
-  dmgPower: 0.5
+  dmgPower: 1
 --- !u!114 &114657475056769258
 MonoBehaviour:
   m_ObjectHideFlags: 1
