@@ -38,23 +38,13 @@ public class UISlotsManager : MonoBehaviour {
         NewSlot.SetActive(true); //Activate the GameObject
         slots.Add(NewSlot);
 
-
-        /*
-        Image newSlot = new Image();
-        slots[freeSlot].GetComponent<Image>().sprite = item.sprite;
-        slots[free]
-        item.slotNb = freeSlot; 
-        freeSlot++;*/
     }
 
     public void RemoveItemInSlot(Item itemToRemove)
     {
-        //Find the item
-        GameObject slotToRemove = slots.Where(obj => obj.name == "UI"+itemToRemove.itemName).SingleOrDefault();
+        GameObject slotToRemove = slots.Where(obj => obj.name == "UI"+itemToRemove.itemName).FirstOrDefault();
+        slots.Remove(slotToRemove);
         Destroy(slotToRemove);
-
-        //Remove the item
-        //remove 1 from slotNb for all the item after itemToRemove.slotNb
     }
     public void RemoveAllItemInSlot(Item itemToRemove)
     {
@@ -62,6 +52,7 @@ public class UISlotsManager : MonoBehaviour {
         List<GameObject> slotsToRemove = slots.Where(obj => obj.name == "UI" + itemToRemove.itemName).ToList<GameObject>();
         foreach (GameObject slot in slotsToRemove)
         {
+            slots.Remove(slot);
             Destroy(slot);
         }
 

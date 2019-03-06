@@ -17,5 +17,13 @@ public class TestingScript : MonoBehaviour {
         {
             UISlotsManager.instance.AddItemInSlot(itemTest);
         }
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            UISlotsManager.instance.RemoveItemInSlot(itemTest);
+        }
+        if (Input.GetKeyDown(KeyCode.Z))
+        {
+            UISlotsManager.instance.RemoveAllItemInSlot(itemTest);
+        }
     }
 }
