@@ -7,7 +7,6 @@ using System.Linq;
 
 public class UISlots : MonoBehaviour {
 
-    //[SerializeField] List<Sprite> spriteList;
     [SerializeField] List<GameObject> slots;
     private int freeSlot = 0;
     private Vector3 autoLocalScale = new Vector3( 1.0f, 1.0f, 1.0f );
@@ -46,5 +45,12 @@ public class UISlots : MonoBehaviour {
     public void RemoveAllItemInSlot(Item itemToRemove)
     {
         //Same, but removing all items (se .ToList() instead of SingleOrDefault() and that will return a collection of all objects named "Sword")
+        List<GameObject> slotsToRemove = slots.Where(obj => obj.name == "UI" + itemToRemove.name).ToList<GameObject>();
+        foreach (GameObject slot in slotsToRemove)
+        {
+            Destroy(slot);
+        }
+
+        
     }
 }
