@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ItemTriggerScript : MonoBehaviour {
+public class ItemDmgScript : MonoBehaviour {
 
     public bool isDamaging;
     public float damage = 1;
@@ -11,6 +11,6 @@ public class ItemTriggerScript : MonoBehaviour {
     {
         if (other.tag == "Player")
             other.SendMessage((isDamaging) ? "TakeDamage" : "HealDamage", damage);
-        Destroy(gameObject);
+        Destroy(gameObject); //A voir s'il faut le laisser
     }
 }
