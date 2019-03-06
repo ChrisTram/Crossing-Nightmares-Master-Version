@@ -9,6 +9,22 @@ public class UISlotsManager : MonoBehaviour {
 
     List<GameObject> slots;
     //private int freeSlot = 0;
+    public static UISlotsManager instance;
+
+
+    void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else if (instance != this)
+        {
+            Destroy(gameObject);
+        }
+        slots = new List<GameObject>();
+    }
+
     public void AddItemInSlot(Item item)
     {
         if (item == null)

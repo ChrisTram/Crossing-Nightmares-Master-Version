@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Item : MonoBehaviour {
+public class Item {
 
     public string itemName;
     public int slotNb = -1; //-1 Par défaut, n'est donc pas dans un slot UI
