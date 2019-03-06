@@ -23,7 +23,7 @@ public class LocalizationManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-
+        instance.LoadLocalizedText("localizedText_fr.json");
         DontDestroyOnLoad(gameObject);
     }
 
@@ -48,7 +48,6 @@ public class LocalizationManager : MonoBehaviour
         {
             Debug.LogError("Cannot find file!");
         }
-
         isReady = true;
     }
 

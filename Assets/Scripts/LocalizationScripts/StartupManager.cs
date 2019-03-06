@@ -13,8 +13,8 @@ public class StartupManager : MonoBehaviour
         {
             yield return null;
         }
-
-        SceneManager.LoadScene("MenuScreen");
+        //TODO Voir si j'en ai vraiment besoin
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
 }
