@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class Item : MonoBehaviour {
 
-    public string name;
+    public string itemName;
     public int slotNb = -1; //-1 Par défaut, n'est donc pas dans un slot UI
     public Sprite sprite; //Le sprite affiché dans l'UI
 
-    public Item(string itemName, Sprite spriteRef)
+    public Item(string ItemName, Sprite SpriteRef)
     {
-        name = itemName;
-        sprite = spriteRef;
+        itemName = ItemName;
+        sprite = SpriteRef;
     }
 
 }
