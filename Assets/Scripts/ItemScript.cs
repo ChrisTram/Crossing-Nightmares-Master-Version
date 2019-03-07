@@ -6,10 +6,18 @@ public class ItemScript : MonoBehaviour
 {
 
     public string key_Name;
+    public string itemName;
+    public Sprite sprite;
+
+    private Item item;
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
-        Destroy(gameObject);
+        {
+            item = new Item(key_Name, itemName, sprite);
+            UISlotsManager.instance.AddItemInSlot(item);
+            Destroy(gameObject);
+        }
     }
 }
