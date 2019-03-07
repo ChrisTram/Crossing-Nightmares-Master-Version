@@ -25,6 +25,9 @@ public class UISlotsManager : MonoBehaviour {
             Destroy(gameObject);
         }
         slots = new List<GameObject>();
+
+        
+
     }
 
     public void AddItemInSlot(Item item)
@@ -41,9 +44,17 @@ public class UISlotsManager : MonoBehaviour {
         NewSlot.GetComponent<RectTransform>().SetParent(slotsLayout.transform); //Assign the newly created Image GameObject as a Child of the Parent Panel.
         NewSlot.SetActive(true); //Activate the GameObject
         //CREATION DU SLOT GLOW
-
+        GameObject GlowSlot = new GameObject(); //Create the GameObject
+        Image NewImageG = GlowSlot.AddComponent<Image>(); //Add the Image Component script
+        NewImageG.name = "UI" + item.itemName;
+        NewImageG.sprite = glowSprite; //Set the Sprite of the Image Component on the new GameObject
+        NewImageG.raycastTarget = false;
+        GlowSlot.GetComponent<RectTransform>().SetParent(slotsGlowLayout.transform); //Assign the newly created Image GameObject as a Child of the Parent Panel.
         //RELIER LE GLOW A LITEM AFIN DE TOUJOURS LE REFERENCER
         NewSlot.AddComponent<UISlotsClickAction>();
+        NewSlot.GetComponent<UISlotsClickAction>().glow = GlowSlot;
+        GlowSlot.SetActive(false); //Activate the GameObject
+
         slots.Add(NewSlot);
 
     }

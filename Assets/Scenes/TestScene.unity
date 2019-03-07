@@ -5641,7 +5641,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4688788247405848, guid: e66df08afe2df004b88b8815995378a6, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 16.19
+      value: 1.13
       objectReference: {fileID: 0}
     - target: {fileID: 4688788247405848, guid: e66df08afe2df004b88b8815995378a6, type: 2}
       propertyPath: m_LocalPosition.y
@@ -5649,7 +5649,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4688788247405848, guid: e66df08afe2df004b88b8815995378a6, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -9.577744
+      value: 6.29
       objectReference: {fileID: 0}
     - target: {fileID: 4688788247405848, guid: e66df08afe2df004b88b8815995378a6, type: 2}
       propertyPath: m_LocalRotation.x
@@ -5723,15 +5723,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
-    m_Left: 10
+    m_Left: -6
     m_Right: 0
-    m_Top: -10
+    m_Top: -25
     m_Bottom: 0
   m_ChildAlignment: 0
   m_StartCorner: 0
   m_StartAxis: 1
-  m_CellSize: {x: 100, y: 100}
-  m_Spacing: {x: 10, y: 0}
+  m_CellSize: {x: 130, y: 130}
+  m_Spacing: {x: -20, y: 0}
   m_Constraint: 0
   m_ConstraintCount: 2
 --- !u!1 &1285293358
@@ -6268,28 +6268,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4371029137930102, guid: 57ee4541db677a24188cc6f425d62a98,
     type: 2}
   m_PrefabInternal: {fileID: 1481250337}
---- !u!1 &1493498598 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1762102738407046, guid: e66df08afe2df004b88b8815995378a6,
-    type: 2}
-  m_PrefabInternal: {fileID: 1237066631}
 --- !u!4 &1493498600 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4688788247405848, guid: e66df08afe2df004b88b8815995378a6,
     type: 2}
   m_PrefabInternal: {fileID: 1237066631}
---- !u!65 &1493498602
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1493498598}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2.0686302, y: 1.6753078, z: 1.979044}
-  m_Center: {x: -0.032360077, y: 0.33765388, z: 0.3358631}
 --- !u!114 &1501477191
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6372,6 +6355,11 @@ Prefab:
       propertyPath: HPText
       value: 
       objectReference: {fileID: 161815185}
+    - target: {fileID: 198805972747931204, guid: c4764ac042f4b864dbbae8de867c3ffe,
+        type: 2}
+      propertyPath: ShapeModule.radius.value
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c4764ac042f4b864dbbae8de867c3ffe, type: 2}
   m_IsPrefabAsset: 0
