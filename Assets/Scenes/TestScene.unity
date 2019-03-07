@@ -3376,7 +3376,7 @@ Prefab:
     - target: {fileID: 224282783044979578, guid: d73b3e4f594e26848911249371391858,
         type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 224282783044979578, guid: d73b3e4f594e26848911249371391858,
         type: 2}
@@ -5660,7 +5660,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1425021337
 Transform:
   m_ObjectHideFlags: 0
@@ -5996,7 +5996,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4550594283111608, guid: c4764ac042f4b864dbbae8de867c3ffe, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 114592505940668436, guid: c4764ac042f4b864dbbae8de867c3ffe,
         type: 2}
@@ -7480,7 +7480,7 @@ Transform:
   - {fileID: 470632498}
   - {fileID: 2137175621}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &1808744254
 Mesh:

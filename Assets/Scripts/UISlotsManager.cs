@@ -8,7 +8,6 @@ using System.Linq;
 public class UISlotsManager : MonoBehaviour {
 
     List<GameObject> slots;
-    //private int freeSlot = 0;
     public static UISlotsManager instance;
 
 
@@ -36,6 +35,7 @@ public class UISlotsManager : MonoBehaviour {
         NewImage.sprite = item.sprite; //Set the Sprite of the Image Component on the new GameObject
         NewSlot.GetComponent<RectTransform>().SetParent(this.transform); //Assign the newly created Image GameObject as a Child of the Parent Panel.
         NewSlot.SetActive(true); //Activate the GameObject
+        NewSlot.AddComponent<UISlotsClickAction>();
         slots.Add(NewSlot);
 
     }
@@ -48,7 +48,7 @@ public class UISlotsManager : MonoBehaviour {
     }
     public void RemoveAllItemInSlot(Item itemToRemove)
     {
-        //Same, but removing all items (se .ToList() instead of SingleOrDefault() and that will return a collection of all objects named "Sword")
+        //Same, but removing all items
         List<GameObject> slotsToRemove = slots.Where(obj => obj.name == "UI" + itemToRemove.itemName).ToList<GameObject>();
         foreach (GameObject slot in slotsToRemove)
         {
