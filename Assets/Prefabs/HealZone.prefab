@@ -38,8 +38,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1713724734705932}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13.87, y: 0.58, z: 0.41}
-  m_LocalScale: {x: 6.038899, y: 0.075, z: 9.164584}
+  m_LocalPosition: {x: 13.87, y: 0.69, z: 0.40999997}
+  m_LocalScale: {x: 6.038899, y: 0.1, z: 9.164584}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -110,7 +110,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isDamaging: 0
-  damage: 10
+  damage: 20
   effectName: Luc
 --- !u!114 &114872468584280732
 MonoBehaviour:
