@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class StartupManager : MonoBehaviour
 {
-
+    private int level_index;
     // Use this for initialization
     private IEnumerator Start()
     {
@@ -14,6 +14,8 @@ public class StartupManager : MonoBehaviour
             yield return null;
         }
         //TODO Voir si j'en ai vraiment besoin
+        //level_index = PlayerPrefs.GetInt("Last_Level");
+        //SceneManager.LoadScene(level_index);
         //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
