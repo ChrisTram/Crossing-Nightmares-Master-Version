@@ -8,6 +8,11 @@ public class Item {
     public string itemName;
     public Sprite sprite; //Le sprite affiché dans l'UI
 
+    public Item(string ItemName)
+    {
+        itemName = ItemName;
+    }
+
     public Item(string ItemName, Sprite SpriteRef)
     {
         itemName = ItemName;

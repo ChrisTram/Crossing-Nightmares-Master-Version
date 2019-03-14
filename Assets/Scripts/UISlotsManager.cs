@@ -8,7 +8,7 @@ using System.Linq;
 public class UISlotsManager : MonoBehaviour {
 
     public static UISlotsManager instance;
-    List<GameObject> slots;
+    public List<GameObject> slots;
 
     public GameObject slotsLayout;
     public GameObject slotsGlowLayout;
@@ -61,6 +61,8 @@ public class UISlotsManager : MonoBehaviour {
 
     public void RemoveItemInSlot(Item itemToRemove)
     {
+        Debug.Log("test");
+        Debug.Log("nom item : " + itemToRemove.itemName);
         GameObject slotToRemove = slots.Where(obj => obj.name == "UI"+itemToRemove.itemName).FirstOrDefault();
         slots.Remove(slotToRemove);
         Destroy(slotToRemove);
@@ -76,5 +78,22 @@ public class UISlotsManager : MonoBehaviour {
         }
 
         
+    }
+
+    public bool checkItem(string itemName)
+    {
+
+        GameObject itemToTrigger = instance.slots.Where(obj => obj.name == "UI" + itemName).FirstOrDefault();
+        if (itemToTrigger == null)
+        {
+            Debug.Log("Item non trouvé");
+            return false;
+        }
+        else
+        {
+            Debug.Log("Triggered !");
+            return true;
+
+        }
     }
 }

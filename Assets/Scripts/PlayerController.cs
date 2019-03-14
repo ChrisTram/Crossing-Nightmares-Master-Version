@@ -49,6 +49,8 @@ public class PlayerController : MonoBehaviour {
             {
                 if (hit.collider.tag == "Trigger")
                 {
+
+                    hit.collider.SendMessage("Trigger");
                     Debug.Log("---> Hit: ");
                 }
             }
