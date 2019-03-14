@@ -8,6 +8,7 @@ TagManager:
   - HealZone
   - Heal
   - Test
+  - Trigger
   layers:
   - Default
   - TransparentFX

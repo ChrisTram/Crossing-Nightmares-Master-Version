@@ -40,8 +40,23 @@ public class PlayerController : MonoBehaviour {
                 agent.SetDestination(hit.point);
             }
         }
+        if (Input.GetMouseButtonDown(1))
+        {
+            Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
 
-        if (agent.remainingDistance > agent.stoppingDistance)
+            if (Physics.Raycast(ray, out hit))
+            {
+                if (hit.collider.tag == "Trigger")
+                {
+                    Debug.Log("---> Hit: ");
+                }
+            }
+
+        }
+
+
+            if (agent.remainingDistance > agent.stoppingDistance)
         {
             character.Move(agent.desiredVelocity, false, false);
         } else
