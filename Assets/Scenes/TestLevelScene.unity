@@ -124,13 +124,14 @@ GameObject:
   - component: {fileID: 106465662}
   - component: {fileID: 106465664}
   - component: {fileID: 106465663}
+  - component: {fileID: 106465665}
   m_Layer: 0
-  m_Name: EndZone
+  m_Name: TestZone
   m_TagString: Trigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &106465662
 Transform:
   m_ObjectHideFlags: 0
@@ -138,11 +139,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 106465661}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 31.200684, y: -0.085510254, z: 0.34474373}
+  m_LocalPosition: {x: -668.2993, y: -317.0855, z: 0.34474373}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_Father: {fileID: 698112161}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &106465663
 MonoBehaviour:
@@ -167,6 +168,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.982317, y: 3.063367, z: 14.792507}
   m_Center: {x: -0.022675514, y: 1.0316834, z: -0.15605736}
+--- !u!114 &106465665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 106465661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48962a33634726e47b92da92c4de2348, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemToTriggerStr: Diamond
 --- !u!1001 &156419361
 Prefab:
   m_ObjectHideFlags: 0
@@ -701,9 +714,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 699.5, y: 317, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 106465662}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &750366758
 GameObject:
