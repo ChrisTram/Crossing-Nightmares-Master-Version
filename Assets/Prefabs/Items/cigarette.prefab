@@ -230,6 +230,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06571cd940750924d8ddaa784a9b2e54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key_Name: key_cigarette
+  key_Name: item_cigarette
   itemName: Cigarette
   sprite: {fileID: 0}
