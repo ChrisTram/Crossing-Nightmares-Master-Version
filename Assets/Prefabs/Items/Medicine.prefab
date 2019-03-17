@@ -89,6 +89,7 @@ GameObject:
   - component: {fileID: 4426505722099344}
   - component: {fileID: 65104553661855044}
   - component: {fileID: 114687389107343736}
+  - component: {fileID: 95476738587305230}
   m_Layer: 0
   m_Name: Medicine
   m_TagString: Untagged
@@ -175,7 +176,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1903325145878362}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0.00003297371, y: 0.81649786, z: 0.00004663209, w: -0.5773484}
   m_LocalPosition: {x: 23.51398, y: 0.9, z: -6.969584}
   m_LocalScale: {x: 0.015, y: 0.015, z: 0.015}
   m_Children:
@@ -491,6 +492,24 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 130.4414, y: 56.740288, z: 121.828674}
   m_Center: {x: -0.4784386, y: 27.87014, z: 0.48970187}
+--- !u!95 &95476738587305230
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1903325145878362}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 40025b808c732a54ea9351ef5a799da8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &114687389107343736
 MonoBehaviour:
   m_ObjectHideFlags: 1
