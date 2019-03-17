@@ -53,8 +53,8 @@ public class UISlotsManager : MonoBehaviour {
         //RELIER LE GLOW A LITEM AFIN DE TOUJOURS LE REFERENCER
         NewSlot.AddComponent<UISlotsClickAction>();
         NewSlot.GetComponent<UISlotsClickAction>().glow = GlowSlot;
-        GlowSlot.SetActive(false); //Activate the GameObject
-
+        GlowSlot.SetActive(true); //Activate the GameObject
+        GlowSlot.GetComponent<Image>().enabled = false;
         slots.Add(NewSlot);
 
     }

@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using System.IO;
 
 public class UISlotsClickAction : MonoBehaviour, IPointerClickHandler
@@ -17,11 +18,11 @@ public class UISlotsClickAction : MonoBehaviour, IPointerClickHandler
             isSelect = !isSelect;
             if (isSelect)
             {
-                glow.SetActive(true);
+                glow.GetComponent<Image>().enabled = true;
             } 
             else
             {
-                glow.SetActive(false);
+                glow.GetComponent<Image>().enabled = false;
             }
         }
     }
