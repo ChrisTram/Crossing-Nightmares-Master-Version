@@ -25,6 +25,8 @@ GameObject:
   - component: {fileID: 114764385504768076}
   - component: {fileID: 65545319237005134}
   - component: {fileID: 95913600899220432}
+  - component: {fileID: 114136300974300698}
+  - component: {fileID: 114672215484172716}
   m_Layer: 0
   m_Name: cigarette
   m_TagString: Untagged
@@ -219,6 +221,28 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114136300974300698
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1253620565970678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45079a7710753f846bcee4b9dfb3fe31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114672215484172716
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1253620565970678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45079a7710753f846bcee4b9dfb3fe31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114764385504768076
 MonoBehaviour:
   m_ObjectHideFlags: 1

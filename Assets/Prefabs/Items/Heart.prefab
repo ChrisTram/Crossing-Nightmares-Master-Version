@@ -55,6 +55,7 @@ GameObject:
   - component: {fileID: 4653792255274792}
   - component: {fileID: 65047561060506968}
   - component: {fileID: 114144121049372180}
+  - component: {fileID: 114872582983394566}
   m_Layer: 0
   m_Name: Heart
   m_TagString: Heal
@@ -225,3 +226,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isDamaging: 0
   damage: 25
+--- !u!114 &114872582983394566
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1686218491564080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45079a7710753f846bcee4b9dfb3fe31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

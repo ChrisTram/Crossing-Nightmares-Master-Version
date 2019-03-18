@@ -46,7 +46,7 @@ public class UIManager : MonoBehaviour
 
     public void disableItemInfo()
     {
-        UIItemInfo.SetActive(true);
+        UIItemInfo.SetActive(false);
     }
 }
         /*

@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4692710635560110}
   - component: {fileID: 65253642249333420}
   - component: {fileID: 114046171689418478}
+  - component: {fileID: 114144386345730678}
   m_Layer: 0
   m_Name: Roly
   m_TagString: Untagged
@@ -140,3 +141,14 @@ MonoBehaviour:
   key_Name: item_roly
   itemName: Roly
   sprite: {fileID: 21300000, guid: c53deb60e9af8b840b8b1ccc16a09de5, type: 3}
+--- !u!114 &114144386345730678
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1296150394552824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45079a7710753f846bcee4b9dfb3fe31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

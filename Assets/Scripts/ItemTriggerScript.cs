@@ -14,23 +14,6 @@ public class ItemTriggerScript : MonoBehaviour {
             UISlotsManager.instance.RemoveItemInSlot(new Item(itemToTriggerStr));
             Destroy(gameObject);
         }
-
-
-        /*
-        List<GameObject> listItems;
-        listItems = UISlotsManager.instance.slots;
         
-        GameObject itemToTrigger = listItems.Where(obj => obj.name == "UI" + itemToTriggerStr).FirstOrDefault();
-        if (itemToTrigger == null)
-        {
-            Debug.Log("Item non trouvé");
-        } else
-        {
-            Debug.Log("Triggered !");
-            UISlotsManager.instance.RemoveItemInSlot(new Item(itemToTrigger.name));
-            Destroy(gameObject);
-            
-        }*/
-
     }
 }
