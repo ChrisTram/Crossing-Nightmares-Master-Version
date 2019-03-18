@@ -222,8 +222,8 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 114837960177479858, guid: fa0e5f21b94b58b46b179bb5a17d5366,
         type: 2}
-      propertyPath: itemToTriggerStr
-      value: Cigarette
+      propertyPath: key_Name
+      value: trigger_rabit
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa0e5f21b94b58b46b179bb5a17d5366, type: 2}

@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 95057992241952404}
   - component: {fileID: 114837960177479858}
   - component: {fileID: 65774585612659968}
+  - component: {fileID: 114119454179801436}
   m_Layer: 0
   m_Name: Rabbit_Scorpion
   m_TagString: Trigger
@@ -38,7 +39,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1665908265384008}
   m_LocalRotation: {x: -0.09172557, y: 0.8967232, z: 0.22086443, w: 0.37241486}
-  m_LocalPosition: {x: 13.1011, y: 9.220659, z: 8.551676}
+  m_LocalPosition: {x: 27.76, y: 9.04, z: 23.13}
   m_LocalScale: {x: 1.0000001, y: 1.0000001, z: 0.9999998}
   m_Children: []
   m_Father: {fileID: 0}
@@ -116,6 +117,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114119454179801436
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1665908265384008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faf376ef59dad3d4abc545d290bbd02f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114837960177479858
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -127,5 +139,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48962a33634726e47b92da92c4de2348, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemToTriggerStr: Diamond
-  key_Name: 
+  itemToTriggerStr: Cigarette
+  key_Name: trigger_rabit

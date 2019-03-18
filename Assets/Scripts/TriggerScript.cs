@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
-public class ItemTriggerScript : MonoBehaviour {
+public class TriggerScript : MonoBehaviour {
     public string itemToTriggerStr;
     public string key_Name;
 
