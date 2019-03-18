@@ -65,6 +65,7 @@ public class UISlotsManager : MonoBehaviour {
         Debug.Log("nom item : " + itemToRemove.itemName);
         GameObject slotToRemove = slots.Where(obj => obj.name == "UI"+itemToRemove.itemName).FirstOrDefault();
         slots.Remove(slotToRemove);
+        Destroy(slotToRemove.GetComponent<UISlotsClickAction>().glow);
         Destroy(slotToRemove);
     }
     public void RemoveAllItemInSlot(Item itemToRemove)

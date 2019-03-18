@@ -4,6 +4,9 @@ using UnityEngine;
 using System.Linq;
 public class ItemTriggerScript : MonoBehaviour {
     public string itemToTriggerStr;
+    public string key_Name;
+
+
     public void Trigger()
     {
         if(UISlotsManager.instance.checkItem(itemToTriggerStr))
