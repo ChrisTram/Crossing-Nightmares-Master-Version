@@ -8,6 +8,8 @@ public class MainMenu : MonoBehaviour {
 	public Animator loadGamePanel;
     public Animator settingsPanel;
 
+    public string selectedChapter = "";
+
     private void Awake()
     {
         instance = this;
@@ -35,6 +37,15 @@ public class MainMenu : MonoBehaviour {
             loadGamePanel.SetTrigger("desactivate");
     }
 
+    public void ExitOutOfLoadGamePanel()
+    {
+        loadGamePanel.SetTrigger("desactivate");
+    }
+    public void ExitOutOfSettingsPanel()
+    {
+        settingsPanel.SetTrigger("desactivate");
+    }
+
     public void CloseLoadGamePanel()
     {
         loadGamePanel.gameObject.SetActive(false);
@@ -45,5 +56,15 @@ public class MainMenu : MonoBehaviour {
     {
         settingsPanel.gameObject.SetActive(false);
 
+    }
+
+    public void StartNewGame()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("TestVNScene");
+    }
+
+    public void Continue()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene(PlayerPrefs.GetInt("Last_Level"));
     }
 }
