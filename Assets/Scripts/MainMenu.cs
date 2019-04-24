@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
+
 
 public class MainMenu : MonoBehaviour {
 
@@ -8,7 +10,7 @@ public class MainMenu : MonoBehaviour {
 	public Animator loadGamePanel;
     public Animator settingsPanel;
 
-    public string selectedChapter = "";
+    public int selectedChapter = 0;
 
     private void Awake()
     {
@@ -35,6 +37,17 @@ public class MainMenu : MonoBehaviour {
 
         if (loadGamePanel.gameObject.activeInHierarchy)
             loadGamePanel.SetTrigger("desactivate");
+    }
+
+    public void ClickChapter()
+    {
+        selectedChapter = int.Parse(EventSystem.current.currentSelectedGameObject.name);
+        Debug.Log(selectedChapter);
+    }
+
+    public void ClickLoadChapter()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene(selectedChapter);
     }
 
     public void ExitOutOfLoadGamePanel()
