@@ -25,6 +25,7 @@ public class LocalizationManager : MonoBehaviour
         }
         //TODO TO REMOVE
         instance.LoadLocalizedText("localizedText_fr.json");
+        Debug.Log("Localization ON");
         DontDestroyOnLoad(gameObject);
     }
 
