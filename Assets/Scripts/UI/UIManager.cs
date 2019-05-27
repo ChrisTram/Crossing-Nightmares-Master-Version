@@ -41,6 +41,7 @@ public class UIManager : MonoBehaviour
     public void showItemInfo(string itemName)
     {
         UIItemInfo.GetComponentInChildren<TMP_Text>().text = itemName;
+        //UIItemInfo.GetComponent<LocalizedText>().UpdateText();
         UIItemInfo.SetActive(true);
     }
 
