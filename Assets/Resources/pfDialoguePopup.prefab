@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 23356349414678892}
   - component: {fileID: 222340706743487798}
   - component: {fileID: 114241082845083174}
+  - component: {fileID: 114655551035511088}
   m_Layer: 0
   m_Name: pfDialoguePopup
   m_TagString: Untagged
@@ -185,6 +186,17 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   m_maskType: 0
+--- !u!114 &114655551035511088
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1585745921524554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ca4baf993be2b847bf23f7228895116, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!222 &222340706743487798
 CanvasRenderer:
   m_ObjectHideFlags: 1
