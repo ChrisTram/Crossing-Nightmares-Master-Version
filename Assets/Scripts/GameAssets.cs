@@ -2,14 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+//NOT USED ANYMORE
+
 public class GameAssets : MonoBehaviour {
 
-    public static GameAssets _i;
+    private static GameAssets _i;
 
     public static GameAssets i
     {
         get {
-            if (_i == null) _i = Instantiate(Resources.Load<GameAssets>("GameAssets"));
+            if (_i == null) _i = Instantiate(Resources.Load<GameAssets>("GameManager"));
             return _i;
         }
     }
