@@ -12,6 +12,8 @@ public class DialoguePopup : MonoBehaviour {
 
         dialoguePopup.Setup(dialogue);
 
+        dialoguePopup.transform.LookAt(dialoguePopup.transform.position + Camera.main.transform.rotation * Vector3.forward, Camera.main.transform.rotation * Vector3.up);
+
         return dialoguePopup;
     }
 
@@ -34,6 +36,7 @@ public class DialoguePopup : MonoBehaviour {
 
     private void Update()
     {
+
         float moveYSpeed = 2f;
         transform.position += new Vector3(0, moveYSpeed) * Time.deltaTime;
 
