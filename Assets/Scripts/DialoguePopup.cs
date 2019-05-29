@@ -8,15 +8,15 @@ public class DialoguePopup : MonoBehaviour {
 	public static DialoguePopup Create(Vector3 position, string dialogue)
     {
         Transform dialoguePopupTransform = Instantiate(Resources.Load<Transform>("pfDialoguePopup"), position, Quaternion.identity);
-
         DialoguePopup dialoguePopup = dialoguePopupTransform.GetComponent<DialoguePopup>();
+
         dialoguePopup.Setup(dialogue);
 
         return dialoguePopup;
     }
 
     private TextMeshPro textMesh;
-    private float disappearTimer;
+    private static float disappearTimer;
     private Color textColor;
 
     private void Awake()
@@ -34,7 +34,7 @@ public class DialoguePopup : MonoBehaviour {
 
     private void Update()
     {
-        float moveYSpeed = 20f;
+        float moveYSpeed = 2f;
         transform.position += new Vector3(0, moveYSpeed) * Time.deltaTime;
 
         disappearTimer -= Time.deltaTime;
