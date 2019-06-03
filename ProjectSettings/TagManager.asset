@@ -10,6 +10,7 @@ TagManager:
   - Test
   - Trigger
   - DmgZone
+  - Enemy
   layers:
   - Default
   - TransparentFX
