@@ -23,7 +23,6 @@ GameObject:
   - component: {fileID: 23850522408036288}
   - component: {fileID: 114149666186396508}
   - component: {fileID: 65348622043102456}
-  - component: {fileID: 114963564316938180}
   m_Layer: 0
   m_Name: DmgZone
   m_TagString: DmgZone
@@ -38,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1914604065911960}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12.58, y: 0.57500005, z: -4.88}
+  m_LocalPosition: {x: 12.58, y: 0.63, z: -4.88}
   m_LocalScale: {x: 3.19, y: 0.1, z: 10.83}
   m_Children: []
   m_Father: {fileID: 0}
@@ -96,8 +95,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 2.4948225, z: 1.0000001}
-  m_Center: {x: 0, y: 0.7474119, z: 0}
+  m_Size: {x: 0.95176786, y: 2.4948225, z: 0.9742427}
+  m_Center: {x: 0.0045831674, y: 0.7474119, z: -0.0041295066}
 --- !u!114 &114149666186396508
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -110,20 +109,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isDamaging: 1
-  damage: 40
-  effectName: Fire
---- !u!114 &114963564316938180
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1914604065911960}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2777bba7e4e7c6f4681e3ea77eef5438, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Size: {x: 1.0046024, y: 100, z: 1.0040407}
-  m_Center: {x: 0.00810951, y: 0, z: 0}
-  m_Area: 0
-  m_AffectedAgents: 00000000
+  damage: 50
+  effectName: Smoke

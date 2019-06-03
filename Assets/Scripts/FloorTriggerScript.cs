@@ -10,7 +10,7 @@ public class FloorTriggerScript : MonoBehaviour {
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.tag == "Player")
+        if (other.tag == "Player" || other.tag == "Enemy")
         {
 
             other.SendMessage((isDamaging) ? "TakeDamage" : "HealDamage", Time.deltaTime * damage);
@@ -19,7 +19,7 @@ public class FloorTriggerScript : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player")
+        if (other.tag == "Player" || other.tag == "Enemy")
         {
             if (effectName.Length != 0)
             {
@@ -30,7 +30,7 @@ public class FloorTriggerScript : MonoBehaviour {
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.tag == "Player")
+        if (other.tag == "Player" || other.tag == "Enemy")
         {
             if (effectName.Length != 0)
             {
