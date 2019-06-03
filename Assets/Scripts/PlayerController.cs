@@ -95,6 +95,10 @@ public class PlayerController : MonoBehaviour {
         Debug.Log("stopEffect");
         ParticleSystem effect = effects.Find(obj => obj.name == effectName).GetComponent<ParticleSystem>();
         effect.Stop();
+        if (effectName != "Luc")
+        {
+            effects.Find(obj => obj.name == effectName).SetActive(false); //TODO A CHANGER DEUX FONCTIONS DISTINCTES
+        }
     }
 
 }
