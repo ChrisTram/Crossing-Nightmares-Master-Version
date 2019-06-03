@@ -16,4 +16,9 @@ public class TriggerScript : MonoBehaviour {
         }
         
     }
+
+    public void showDialogPopup(RaycastHit hit)
+    {
+        DialoguePopup.Create(hit.point, key_Name+"DP");
+    }
 }

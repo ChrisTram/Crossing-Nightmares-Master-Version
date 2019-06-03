@@ -20,4 +20,8 @@ public class ItemScript : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    public void showDialogPopup(RaycastHit hit)
+    {
+        DialoguePopup.Create(hit.point, key_Name + "DP");
+    }
 }

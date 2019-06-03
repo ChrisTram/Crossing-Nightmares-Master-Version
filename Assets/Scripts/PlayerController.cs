@@ -38,8 +38,13 @@ public class PlayerController : MonoBehaviour {
             if(Physics.Raycast(ray, out hit))
             {
                 agent.SetDestination(hit.point);
+                if (hit.collider.tag == "Trigger")
+                {
+                    hit.collider.SendMessage("showDialogPopup",hit);
+                }
             }
         }
+        //On Trigger un objet, cela le fera bouger / disparaitre selon son état
         if (Input.GetMouseButtonDown(1))
         {
             Ray ray = cam.ScreenPointToRay(Input.mousePosition);
