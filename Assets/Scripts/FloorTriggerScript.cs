@@ -10,10 +10,13 @@ public class FloorTriggerScript : MonoBehaviour {
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.tag == "Player" || other.tag == "Enemy")
+        if (other.tag == "Player")
         {
 
             other.SendMessage((isDamaging) ? "TakeDamage" : "HealDamage", Time.deltaTime * damage);
+        } else if (other.tag == "Enemy")
+        {
+            if (isDamaging) other.SendMessage("TakeDamage", Time.deltaTime * damage);
         }
     }
 
