@@ -28,7 +28,7 @@ GameObject:
   - component: {fileID: 114136300974300698}
   - component: {fileID: 114672215484172716}
   m_Layer: 0
-  m_Name: cigarette
+  m_Name: Cigarette
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
