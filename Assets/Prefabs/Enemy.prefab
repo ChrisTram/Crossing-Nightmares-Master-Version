@@ -242,6 +242,7 @@ GameObject:
   - component: {fileID: 114657475056769258}
   - component: {fileID: 95895844808543830}
   - component: {fileID: 54942616302494300}
+  - component: {fileID: 114047263198613250}
   m_Layer: 8
   m_Name: Enemy
   m_TagString: Enemy
@@ -776,7 +777,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1385979265442800}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 15.4, y: 0.52500004, z: -4.518038}
+  m_LocalPosition: {x: -62.980698, y: 0.6105179, z: -0.70474374}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4872730317322556}
@@ -1274,6 +1275,19 @@ MonoBehaviour:
   character: {fileID: 114657475056769258}
   player: {fileID: 0}
   dmgPower: 1
+--- !u!114 &114047263198613250
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1385979265442800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 071cf74fe3b78a448a2e2d05d1b08d0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  maxHP: 100
 --- !u!114 &114401829234494766
 MonoBehaviour:
   m_ObjectHideFlags: 1
