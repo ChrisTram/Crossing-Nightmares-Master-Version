@@ -15,4 +15,9 @@ public class TriggerOnMouseOverScript : MonoBehaviour {
         UIManager.instance.disableItemInfo();
     }
 
+    private void OnDestroy()
+    {
+        UIManager.instance.disableItemInfo();
+    }
+
 }
