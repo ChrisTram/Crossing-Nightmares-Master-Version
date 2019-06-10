@@ -6,11 +6,16 @@ public class ItemOnMouseOverScript : MonoBehaviour {
 
     void OnMouseOver()
     {
-        Debug.Log(this.GetComponent<ItemScript>().key_Name);
+        //Debug.Log(this.GetComponent<ItemScript>().key_Name);
         UIManager.instance.showItemInfo(LocalizationManager.instance.GetLocalizedValue(this.GetComponent<ItemScript>().key_Name));
     }
 
     void OnMouseExit()
+    {
+        UIManager.instance.disableItemInfo();
+    }
+
+    private void OnDestroy()
     {
         UIManager.instance.disableItemInfo();
     }

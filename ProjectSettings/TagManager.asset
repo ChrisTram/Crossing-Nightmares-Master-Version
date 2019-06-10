@@ -11,6 +11,7 @@ TagManager:
   - Trigger
   - DmgZone
   - Enemy
+  - Item
   layers:
   - Default
   - TransparentFX

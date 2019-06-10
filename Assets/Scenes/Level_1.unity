@@ -3336,26 +3336,6 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 824c426f2410f014f9d906871ba42d8e, type: 2}
   m_IsPrefabAsset: 0
---- !u!1 &932043326 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1665908265384008, guid: fa0e5f21b94b58b46b179bb5a17d5366,
-    type: 2}
-  m_PrefabInternal: {fileID: 1446231534}
---- !u!208 &932043333
-NavMeshObstacle:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 932043326}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Shape: 1
-  m_Extents: {x: 6.82, y: 4.742, z: 5.9280005}
-  m_MoveThreshold: 0.1
-  m_Carve: 0
-  m_CarveOnlyStationary: 1
-  m_Center: {x: 0, y: -0.59000003, z: -4.544}
-  m_TimeToStationary: 0.5
 --- !u!1 &950608952 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1403669244802194, guid: d73b3e4f594e26848911249371391858,
@@ -14930,57 +14910,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4272721410992854, guid: fa0e5f21b94b58b46b179bb5a17d5366, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4272721410992854, guid: fa0e5f21b94b58b46b179bb5a17d5366, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4272721410992854, guid: fa0e5f21b94b58b46b179bb5a17d5366, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 65774585612659968, guid: fa0e5f21b94b58b46b179bb5a17d5366,
-        type: 2}
-      propertyPath: m_Size.x
-      value: 13.596215
-      objectReference: {fileID: 0}
-    - target: {fileID: 65774585612659968, guid: fa0e5f21b94b58b46b179bb5a17d5366,
-        type: 2}
-      propertyPath: m_Size.z
-      value: 5.682976
-      objectReference: {fileID: 0}
-    - target: {fileID: 65774585612659968, guid: fa0e5f21b94b58b46b179bb5a17d5366,
-        type: 2}
-      propertyPath: m_Center.x
-      value: 1.6262395
-      objectReference: {fileID: 0}
-    - target: {fileID: 65774585612659968, guid: fa0e5f21b94b58b46b179bb5a17d5366,
-        type: 2}
-      propertyPath: m_Center.y
-      value: -2.3639612
-      objectReference: {fileID: 0}
-    - target: {fileID: 65774585612659968, guid: fa0e5f21b94b58b46b179bb5a17d5366,
-        type: 2}
-      propertyPath: m_Center.z
-      value: -1.0902334
-      objectReference: {fileID: 0}
-    - target: {fileID: 65774585612659968, guid: fa0e5f21b94b58b46b179bb5a17d5366,
-        type: 2}
-      propertyPath: m_Size.y
-      value: 15.811989
-      objectReference: {fileID: 0}
-    - target: {fileID: 4272721410992854, guid: fa0e5f21b94b58b46b179bb5a17d5366, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -8.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 65774585612659968, guid: fa0e5f21b94b58b46b179bb5a17d5366,
-        type: 2}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 23317067695012850, guid: fa0e5f21b94b58b46b179bb5a17d5366,
         type: 2}
       propertyPath: m_Enabled
@@ -16339,7 +16268,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.1
   m_BuildHeightMesh: 0
-  m_NavMeshData: {fileID: 23800000, guid: 8029c55d1f5731a418bb204b85f28a91, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 6d599e31d8508e74e8b0d321813679c4, type: 2}
 --- !u!4 &2085133445
 Transform:
   m_ObjectHideFlags: 0

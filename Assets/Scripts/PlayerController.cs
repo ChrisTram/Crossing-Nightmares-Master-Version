@@ -38,7 +38,7 @@ public class PlayerController : MonoBehaviour {
             if(Physics.Raycast(ray, out hit))
             {
                 agent.SetDestination(hit.point);
-                if (hit.collider.tag == "Trigger")
+                if (hit.collider.tag == "Trigger" || hit.collider.tag == "Item")
                 {
                     hit.collider.SendMessage("showDialogPopup",hit);
                 }
