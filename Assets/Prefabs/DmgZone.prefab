@@ -109,5 +109,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isDamaging: 1
-  damage: 50
+  damage: 25
   effectName: Smoke
