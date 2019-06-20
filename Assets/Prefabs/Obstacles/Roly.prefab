@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 114175194586376910}
   m_Layer: 0
   m_Name: Roly
-  m_TagString: Item
+  m_TagString: Trigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -206,7 +206,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemToTriggerStr: Medicine
-  key_Name: trigger_Roly5
+  key_Name: trigger_Roly
+  giveAnotherItem: 0
 --- !u!114 &114755590067992788
 MonoBehaviour:
   m_ObjectHideFlags: 1
